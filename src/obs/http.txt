@@ -1,0 +1,57 @@
+// Requisição HTTP
+
+URL: https://pokeapi.co/api/v2/pokemon?type=grass&name=i
+    ${Endereço}/${Path = caminho de identificação}
+
+Request methods: GET | POST | PUT | DELETE
+
+GET: Método para pegar dados de um servidor
+
+POST: Usado para enviar dados ao servidor e criar um novo recurso
+
+PUT: Atualizar ou repor um recurso existente
+
+DELETE: Remove um recurso do servidor
+
+// Query string
+
+Seria uma forma de colocar condições em um path
+
+/pokemon?type=grass&name=i
+
+type = "grass"
+name = "i"
+
+// Headers
+
+Request Header: É uma área de dados que manda um tipo de configuração para o servidor
+accept-language:
+     pt-BR;q=1  //Prioridade maxima
+     pt;q=0.9
+     en-US;q=0.8
+     en;q=0.7
+
+
+Response Header: Resposta das requisições
+
+// BODY
+
+É o corpo da requisição, normalmente é usado para os métodos POST e PUT
+
+Request Header:
+     content-type: application/json
+
+Request body
+{
+     "name": "Teste"
+}
+
+// Status code
+
+É a resposta do servidor para mostrar seu status
+
+200 - 299: Sucesso
+300 - 399: Redirect
+400 - 499: Erro por parte do cliente
+500 - 599: Erro interno do servidor
+
