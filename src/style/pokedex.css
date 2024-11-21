@@ -1,6 +1,6 @@
-.pokemons {
+#pokemon {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: .5rem;
 }
 
@@ -27,6 +27,7 @@
 }
 
 .pokedex .name {
+    text-transform: capitalize;
     align-self: flex-start;
     font-size: 1rem;
 }
@@ -46,19 +47,19 @@
 }
 
 @media screen and (min-width: 380px) {
-    .pokemons {
+    #pokemon {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 576px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr 1fr;
+    #pokemon {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .pokemons {
+    #pokemon {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
