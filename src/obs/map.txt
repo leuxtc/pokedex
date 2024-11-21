@@ -1,0 +1,19 @@
+pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('')
+
+
+const newList = pokemons.map((pokemon) => convertPokemonToLi(pokemon))
+
+const newHTML = newList.join('')
+
+pokemonList.innerHTML += newHTML
+
+
+
+const listItems = []
+
+for (let i = 0; i < pokemons.length; i++) {            
+    const pokemon = pokemons[i]
+    listItems.push(convertPokemonToLi(pokemon))
+}
+
+pokemonList.innerHTML += listItems
