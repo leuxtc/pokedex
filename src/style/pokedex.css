@@ -14,10 +14,9 @@
     color: #fff;
 }
 
-.pokedex .detail img {
+.pokedex .detail .sprite {
     align-self: flex-end;
-    height: 60px;
-    transform: scaleX(-1);
+    height: 100px;
 }
 
 .pokedex .number {
