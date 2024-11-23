@@ -1,10 +1,32 @@
 // Cria um objeto para a API
 const PokeApi = {}
 
+// Criando um novo objeto pra ter um json apenas com as informações que vai ser usada
+function convertPokemonDetailToPokemon(pokeDetail) {
+    const pokemon = new Pokemon
+
+    pokemon.name = pokeDetail.name
+    pokemon.number = pokeDetail.id
+
+    const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name)
+
+    // Array destructing para pegar o primeiro indice da lista types
+    const [type] = types
+
+    pokemon.types = types
+    pokemon.type = type
+
+    pokemon.sprite = pokeDetail.sprites.front_default
+
+    return pokemon
+}
+
 // Método para fazer a requisição da url do detalhe dos pokemons
 PokeApi.getPokemonsDetail = (pokemon) => {
     // Retorna a requisição e a lista convertida pra json
-    return fetch(pokemon.url).then((response) => response.json())
+    return fetch(pokemon.url)
+            .then((response) => response.json())
+            .then(convertPokemonDetailToPokemon)
 }
 
 // Cria um método para a requisição da API
@@ -17,7 +39,7 @@ PokeApi.getPokemons = (a = 0, b = 10) => {
         .then((response) => response.json())
 
         // Os then são encadeados, então o proximo sempre será retorno do anterior
-        // Imprime o json convertido e pega o array
+        // Imprime o json convertido e pega a lista do pokemon
         .then((jsonBody) => jsonBody.results)
 
         // Vai mapear a lista de detalhes do pokemon
