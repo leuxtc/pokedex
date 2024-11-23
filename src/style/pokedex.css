@@ -4,14 +4,93 @@
     gap: .5rem;
 }
 
+.bug {
+    background-color: #91c12f;
+}
+
+.dark {
+    background-color: #5a5465;
+}
+
+.dragon {
+    background-color: #0b6dc3;
+}
+
+.electric {
+    background-color: #f4d23c;
+}
+
+.fairy {
+    background-color: #ec8fe6;
+}
+
+.fighting {
+    background-color: #ce416b;
+}
+
+.fire {
+    background-color: #fb6c6c;
+}
+
+.flying {
+    background-color: #89aae3;
+}
+
+.ghost {
+    background-color: #5269ad;
+}
+
+.grass {
+    background-color: #63bc5a;
+}
+
+.ground {
+    background-color: #d97845;
+}
+
+.ice {
+    background-color: #73cec0;
+}
+
+.normal {
+    background-color: #919aa2;
+}
+
+.poison {
+    background-color: #b567ce;
+}
+
+.psychic {
+    background-color: #fa6d75;
+}
+
+.rock {
+    background-color: #c5b78c;
+}
+
+.steel {
+    background-color: #5a8ea2;
+}
+
+.water {
+    background-color: #5090d6;
+}
+
+
 .pokedex {
     display: flex;
     flex-direction: column;
     padding: .8rem;
     border-radius: 1rem;
-    background-color: #46d1b1;
-    font-weight: bolder;
     color: #fff;
+    cursor: pointer;
+    background-image: url('../img/pokeball.psd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pokedex:hover {
+    filter: brightness(1.09);
 }
 
 .pokedex .detail .sprite {
@@ -20,24 +99,27 @@
 }
 
 .pokedex .number {
-    color: #39b396;
+    color: #ffffff6b;
     align-self: flex-end;
     font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 .pokedex .name {
     text-transform: capitalize;
     align-self: flex-start;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .pokedex .type .types {
-    background-color: #61e2cb;
+    filter: brightness(1.19);
     border-radius: 10px;
     width: fit-content;
     padding: 5px 15px;
     margin: .3rem 0 .3rem 0;
     font-size: .6rem;
+    text-transform: capitalize;
 }
 
 .pokedex .detail {

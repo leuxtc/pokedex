@@ -1,13 +1,13 @@
 // Transforma a lista em um HTML
 function convertPokemonToLi(pokemon) {
     return `
-            <li class="pokedex">
+            <li class="pokedex ${pokemon.type}">
                 <span class="number">#00${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
 
                 <div class="detail">
                     <ol class="type">
-                        ${pokemon.types.map((type) => `<li class="types">${type}</li>`).join('')}
+                        ${pokemon.types.map((type) => `<li class="types ${type}">${type}</li>`).join('')}
                     </ol>
                     
                     <img class="sprite" src="${pokemon.sprite}" alt="${pokemon.name}" srcset="">
