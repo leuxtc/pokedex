@@ -16,7 +16,7 @@ function convertPokemonDetailToPokemon(pokeDetail) {
     pokemon.types = types
     pokemon.type = type
 
-    pokemon.sprite = pokeDetail.sprites.front_default
+    pokemon.sprite = pokeDetail.sprites.other.dream_world.front_default
 
     return pokemon
 }
@@ -30,7 +30,7 @@ PokeApi.getPokemonsDetail = (pokemon) => {
 }
 
 // Cria um método para a requisição da API
-PokeApi.getPokemons = (a = 0, b = 12) => {
+PokeApi.getPokemons = (a = 0, b = 0) => {
     const url = `https://pokeapi.co/api/v2/pokemon/?offset=${a}&limit=${b}`
 
     return fetch(url)

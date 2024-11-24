@@ -4,9 +4,6 @@ body {
     background-color: #c8c8c8;
     background-image: url('../img/pokeball.psd.png');
     background-size: 50px;
-}
-
-h1, li {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 

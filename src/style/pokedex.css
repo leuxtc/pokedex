@@ -17,7 +17,7 @@
 }
 
 .electric {
-    background-color: #f4d23c;
+    background-color: #caaa1e;
 }
 
 .fairy {
@@ -81,12 +81,12 @@
     display: flex;
     flex-direction: column;
     padding: .8rem;
-    border-radius: 1rem;
     color: #fff;
-    cursor: pointer;
+    border-radius: 1rem;
     background-image: url('../img/pokeball.psd.png');
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 
 .pokedex:hover {
@@ -95,7 +95,7 @@
 
 .pokedex .detail .sprite {
     align-self: flex-end;
-    height: 100px;
+    height: 70px;
 }
 
 .pokedex .number {
@@ -114,7 +114,7 @@
 
 .pokedex .type .types {
     filter: brightness(1.19);
-    border-radius: 10px;
+    border-radius: 1.2rem;
     width: fit-content;
     padding: 5px 15px;
     margin: .3rem 0 .3rem 0;
@@ -127,6 +127,38 @@
     justify-content: space-between;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-bottom: 10px;
+    width: 100vw;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.btn {
+    border: 2px solid transparent;
+    border-radius: 1.2rem;
+    padding: 10px 20px;
+    margin: 0 1.2rem;
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: #b567ce;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn:hover {
+    transition: .5s;
+    background-color: transparent;
+    color: #b567ce;
+    border: 2px solid #b567ce;
+}
+
 @media screen and (min-width: 380px) {
     #pokemon {
         grid-template-columns: 1fr 1fr;
@@ -135,12 +167,12 @@
 
 @media screen and (min-width: 576px) {
     #pokemon {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 992px) {
     #pokemon {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
