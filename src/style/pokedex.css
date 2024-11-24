@@ -1,6 +1,6 @@
 #pokemon {
     display: grid;
-    grid-template-columns: 226px;
+    grid-template-columns: 1fr;
     gap: .5rem;
 }
 
@@ -157,7 +157,7 @@
 
 @media screen and (min-width: 380px) {
     #pokemon {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 190px 190px;
     }
 }
 
