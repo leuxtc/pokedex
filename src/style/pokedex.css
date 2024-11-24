@@ -1,6 +1,6 @@
 #pokemon {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 226px;
     gap: .5rem;
 }
 
@@ -91,7 +91,7 @@
 
 .pokedex .detail .sprite {
     align-self: flex-end;
-    height: 70px;
+    height: 60px;
 }
 
 .pokedex .number {
