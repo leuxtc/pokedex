@@ -155,7 +155,7 @@
     border: 2px solid #b567ce;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 385px) {
     #pokemon {
         grid-template-columns: 1fr 1fr;
     }
